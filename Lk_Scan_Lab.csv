@@ -1,0 +1,8 @@
+"Scan_Lab_ID","Lab_Abbrev","Lab_name","Department","Institution","Address 1","Address 2","City","State","Zip"
+1,"PSAL","Pacific Slope Archaeology Lab","Dept of Anthropology","Oregon State University","238 Waldo Hall",,"Corvallis","OR","97331"
+2,"UKentucky","Kentucky","Dept of Anthropology","University of Kentucky",,,"Lexington","KY","40506"
+3,"Rotary stage","On remote location","Dept of Anthropology","Oregon State University",,,,,
+4,"UDenver","Denver","Dept of Anthropology","University of Denver",,,"Denver","CO",
+5,"PSAL_road","PSAL travelling scanner","Dept of Anthropology","Oregon State University","238 Waldo Hall",,"Corvallis","OR","97331"
+6,"Willamette","Willamette Analytics","Nyers","Willamette Analytics",,,"Mill City","OR",
+7,"Nyers","Northwest Archaeometrics","Nyers","5060 Philomath Blvd. #331",,,"Corvallis","OR","97333"

@@ -1,0 +1,8 @@
+"Period_ID","Age_abbrev","Period","From_RYBP","To_RYBP","From_Cal_BP","To_Cal_BP","Comment"
+0,,"Unknown",,,,,
+1,"LH","Late Holocene",300,3499,400,3769,"Calib 7.10 (calib.org/calib/calib.html) to calibrate these 14C ages into calendar ages BP"
+2,"MH","Middle Holocene",3500,6999,3770,7839,
+3,"EH","Early Holocene",7000,8499,7840,9509,
+4,"LP_EH","Late Pleistocene - Early Holocene",8500,10799,9510,13340,
+5,"LP","Late Pleistocene",10800,11500,12714,13500,
+100,"Exp","Experimental",,,,,"Modern recreation"

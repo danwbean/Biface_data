@@ -1,0 +1,22 @@
+"Scanner_ID","Nickname","Manufacturer","Model","Serial Number","Comment"
+1,"NextEngine","NextEngine","3D Scanner HD",,
+2,"David A","David","SLS-2",,
+3,"David B","David","SLS-2",,
+4,"Agisoft","Agisoft",,,"The Dietz points were done using photogrammetry by Alex Nyers (multi-line: use page down)
+Software: Agisoft Metashape (previously called PhotoScan)
+Quality settings: Ultra on alignment, high on everything else
+Number of Photos taken per model - varied, between 70-140 depending on the piece
+Camera settings:
+digicamcontrol software for control of camera from computer. unsure on version but it was whatever was current in September 2016
+Nikon d3200
+2-3 second exposure depending on artifact color
+iso 100-200
+aperture - f18 - f22
+
+lighting
+30"" photocube with ambient fluorescent lighting."
+5,"David","David","SLS-2",,"External to our lab"
+6,"ScanStudio",,,,"Vanessa Hanvey University of Kentucky"
+8,"Metashape","Agisoft",,,"Alex and Compute Canada cluster processing"
+9,"Einscan SE","Einscan","SE",,"Alex personal"
+10,"Einscan A","Einscan","SE",,"Lab?"

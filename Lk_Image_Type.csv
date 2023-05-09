@@ -1,0 +1,6 @@
+"Image_Type_ID","Image_type","Comment"
+1,"Tiff BW Bitmap","Assume LZW compression"
+2,"Tiff Grayscale","Assume LZW compression"
+3,"Tiff RGB Color","Assume LZW compression"
+4,"JPG Color",
+5,"Unknown","Not very helpful"
