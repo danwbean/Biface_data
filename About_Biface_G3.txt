@@ -1,0 +1,61 @@
+BFThe G3 directory is based upon Biface (GLiMR_3) code using Pyvista.  September 2021 Dan Bean
+
+
+G3 directory structure
+
+	Input data:
+	
+	/ply_raw		  G123.ply
+					  input mesh (optionally with texture jpg) saved from MeshLab (expect watertight, about 150,000 vetices and 300,000 faces, clean)
+
+	
+	Written by Biface:      (requires ply file)
+	
+	/ply			  G123.ply
+				 	  mesh (optionally with texture jpg) rotated such that plane fit to bifacial edge lies XY plane
+					  This mesh is rotated, watertight, no duplicate vertices, no unreferenced vertices.  Basis for everything.
+		
+	/pts			  G123_top_pts.npy		shape: (count, 3)
+				  G123_base_pts.npy
+					  
+	/grids			  G123_top_spec.npy		(x_origin, y_origin, cell_size)  no data is NaN
+				  G123_top.npy
+					  
+				  G123_mid_spec.npy
+				  G123_mid.npy
+					  
+				  G123_base_spec.npy
+				  G123_base.npy	
+					  
+	/polylines/outlines	  BF123.npy
+					  The bifacial edge (bf) is the boundary 3D polyline of the edge of the split mesh. Split based on face normal (+/- Z)
+					  It is a closed polygon so bf[0] == bf[-1]
+					  It has vertex[0] at +Y max and is ordered counter-clockwise		(opposite of ESRI)
+					  Consider 4th column of pt_idx into mesh.points
+					  
+	/polylines/sections	  Sec123_nn.npy         	# section polyline  (closed polyline with vertex[0] at left max (e.g. -X max for XZ section)
+				  SecMeta123_nn.txt     	# section polyline metadata [center, normal, description] ?? should live in db
+
+	/polylines/reentrants	  RE123.npy         		# reentrant polyline  (closed polyline with vertex[0] at +Y max
+								REMeta123_nn.txt     # reentrant polyline metadata [label, id#, center, normal, description] ?? should live in db
+					  
+	/point_files/ref_pts	  KP123.npy
+					  Key points will be referenced as these vertex indices (e.g. tip = bf[0])
+					  [kp_code, bf_vertex]      Works with kp_dict[code]
+					  
+					  PCR_lm.npy
+					  
+					  
+					  Will need to work through bf[vertex] to pts[vertex] mapping
+					  
+					  
+					  
+					  grids? 
+					  Register them to 0.005 base grid when creating them 
+					  How to store?     [x_origin, y_origin, cell_size] + z_array
+					  G123_top_spec.npy	[x_origin, y_origin, cell_size, center_row, center_col?]   .. pre-compute indices for (0,0) ?
+					  G123_top.npy		(z array)
+					  
+					  ... work through color one grid's topo by another's value
+					  
+	/scratch		Temp storage for intermediate data such as initial unrotated bifacial edge
